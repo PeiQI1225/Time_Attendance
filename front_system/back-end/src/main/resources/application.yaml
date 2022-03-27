@@ -1,0 +1,10 @@
+server:
+    port: 8002
+    forward-headers-strategy: FRAMEWORK
+
+
+app:
+    app_key: ding1fzqciowupqxpkke
+    app_secret: 9mRFw3jNKDhlr_NUVcko00Jh8vqoju9ZyaRBI7wPkETSfhCK3Xm5qJvZQNowS0rl
+    corp_id: dinga05955bb50e3077ff5bf40eda33b7ba0
+    agent_id: 1524435167
