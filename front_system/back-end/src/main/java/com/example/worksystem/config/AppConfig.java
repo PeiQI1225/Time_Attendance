@@ -1,4 +1,5 @@
 package com.example.worksystem.config;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -7,17 +8,21 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @Configuration
 public class AppConfig {
-    @Value("${app.app_key}")
+    @Value("${dingtalk.app_key}")
     private String appKey;
 
-    @Value("${app.app_secret}")
+    @Value("${dingtalk.app_secret}")
     private String appSecret;
 
-    @Value("${app.corp_id}")
+    @Value("${dingtalk.corp_id}")
     private String corpId;
 
-    @Value("${app.agent_id}")
+    @Value("${dingtalk.agent_id}")
     private Long agentId;
+
+
+
+
 
 
 }
