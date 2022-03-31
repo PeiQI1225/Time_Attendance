@@ -1,12 +1,14 @@
 package com.example.worksystem.service;
 
-import com.example.worksystem.domain.PunchResult;
+import com.example.worksystem.domain.Recordresult;
 import com.taobao.api.ApiException;
+
+import java.util.List;
 
 public interface GetPunchResults {
 
 
-    public PunchResult getPunchResultsImpl() throws ApiException;
+    public List<Recordresult> getPunchResultsImpl() throws ApiException;
 
 
 }

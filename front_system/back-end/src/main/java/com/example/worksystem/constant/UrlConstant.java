@@ -12,5 +12,5 @@ public class UrlConstant {
      */
     public static final String GET_ACCESS_TOKEN_URL = HOST + "/gettoken";
     public static final String GET_Punch_Results = HOST + "/attendance/list";
-
+    public static final String GEt_User_ID = HOST + "/topapi/smartwork/hrm/employee/queryonjob";
 }

@@ -28,7 +28,7 @@ public class TokenServiceImpl implements TokenService {
 
     private final AppConfig appConfig;
     @Autowired
-    private SelectToken selectToken;
+    private ImplKT implKT;
 
     @Autowired
     public TokenServiceImpl(AppConfig appConfig) {
@@ -44,7 +44,7 @@ public class TokenServiceImpl implements TokenService {
 //            }
 //        }catch (Exception ignored){
 //        }
-        String accessToken = selectToken.getAccToken(CACHE_TTL);
+        String accessToken = implKT.getAccToken(CACHE_TTL);
         if (accessToken.equals("")) accessToken = getNewAccessToken();
         return accessToken;
 
